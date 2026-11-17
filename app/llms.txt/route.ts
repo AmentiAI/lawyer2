@@ -1,5 +1,5 @@
 import { SERVICES } from "@/lib/services";
-import { CONSULT_FEES, EMAIL, FIRM, HOURS, NEIGHBORHOODS, OFFICE, PHONE, SITE_URL, TOWNS } from "@/lib/site";
+import { BOOK_URL, CONSULT_FEES, EMAIL, FIRM, HOURS, NEIGHBORHOODS, OFFICE, PHONE, SITE_URL, TOWNS } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -33,7 +33,7 @@ ${SERVICES.map((s) => `- [${s.name}](${SITE_URL}/services/${s.slug}): ${s.defini
 - [About Attorney Goncalves](${SITE_URL}/about)
 - [Greater Hartford service area](${SITE_URL}/hartford-area)
 - [FAQ](${SITE_URL}/faq): fees, video consultations, interviews, timelines
-- [Book a consultation](${SITE_URL}/consultation)
+- [Book a consultation](${BOOK_URL})
 - [Contact](${SITE_URL}/contact)
 
 ## Notes

@@ -5,7 +5,7 @@ import { CtaBand, Faq, JsonLd, PageHero } from "@/components/ui";
 import { pageMeta } from "@/lib/meta";
 import { breadcrumbSchema, faqSchema, reviewedPageSchema, serviceSchema } from "@/lib/schema";
 import { getService, SERVICES } from "@/lib/services";
-import { CONTENT_UPDATED, formatDate, PHONE, PHONE_TEL } from "@/lib/site";
+import { BOOK_URL, CONTENT_UPDATED, formatDate, PHONE, PHONE_TEL } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -50,7 +50,7 @@ export default async function ServicePage({ params }: Props) {
           <aside className="aside-card">
             <h3>Start Your {s.name} Case From Hartford</h3>
             <p>Meet Attorney Goncalves by secure video. 30-minute ($99) and 1-hour ($350, credited toward fees) consultations are available.</p>
-            <Link className="btn btn-gold" href={`/consultation?matter=${s.slug}`}>Book Consultation</Link>
+            <a className="btn btn-gold" href={BOOK_URL}>Book Consultation</a>
             <a className="btn btn-outline" href={`tel:${PHONE_TEL}`}>Call {PHONE}</a>
             <ul>
               <li style={{ border: 0, color: "var(--gold-light)", fontWeight: 600 }}>Other Hartford services</li>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SERVICES } from "@/lib/services";
-import { EMAIL, FIRM, HOURS, OFFICE, PHONE, PHONE_TEL, TOWNS } from "@/lib/site";
+import { BOOK_URL, EMAIL, FIRM, HOURS, OFFICE, PHONE, PHONE_TEL, TOWNS } from "@/lib/site";
 
 export default function Footer() {
   return (
@@ -24,7 +24,7 @@ export default function Footer() {
                 <li><Link href="/hartford-area">Greater Hartford Area</Link></li>
                 <li><Link href="/faq">FAQ</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
-                <li><Link href="/consultation">Book a Consultation</Link></li>
+                <li><a href={BOOK_URL}>Book a Consultation</a></li>
                 <li><Link href="/privacy">Privacy Policy</Link></li>
               </ul>
             </div>
@@ -60,7 +60,7 @@ export default function Footer() {
       </footer>
       <div className="mobile-bar">
         <a className="call" href={`tel:${PHONE_TEL}`}>Call Now</a>
-        <Link className="book" href="/consultation">Book Consultation</Link>
+        <a className="book" href={BOOK_URL}>Book Consultation</a>
       </div>
     </>
   );

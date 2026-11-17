@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { FIRM, NAV, PHONE, PHONE_TEL } from "@/lib/site";
+import { BOOK_URL, FIRM, NAV, PHONE, PHONE_TEL } from "@/lib/site";
 
 export default function Header() {
   const pathname = usePathname();
@@ -35,7 +35,7 @@ export default function Header() {
           </nav>
           <div className="header-cta">
             <a className="header-phone" href={`tel:${PHONE_TEL}`}>{PHONE}</a>
-            <Link className="btn btn-gold btn-sm" href="/consultation">Book Now</Link>
+            <a className="btn btn-gold btn-sm" href={BOOK_URL}>Book Now</a>
             <button className="menu-toggle" aria-controls="site-nav" aria-expanded={open} aria-label="Toggle menu" onClick={() => setOpen((o) => !o)}>
               ☰ Menu
             </button>

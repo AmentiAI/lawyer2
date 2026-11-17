@@ -1,4 +1,5 @@
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.hartfordimmigrationlawyer.com").replace(/\/$/, "");
+export const BOOK_URL = "https://www.jacqlaw.com/consultation";
 
 export const FIRM = "Law Office of Jacquelyn R. Goncalves";
 export const ATTORNEY = "Attorney Jacquelyn R. Goncalves";

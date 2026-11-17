@@ -4,6 +4,7 @@ import ServiceCards from "@/components/ServiceCards";
 import { CtaBand, JsonLd, PageHero, SectionHead } from "@/components/ui";
 import { pageMeta } from "@/lib/meta";
 import { breadcrumbSchema } from "@/lib/schema";
+import { BOOK_URL } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
   title: "Hartford, CT Immigration Services | Green Cards & More",
@@ -36,7 +37,7 @@ export default function Services() {
             <h2>Business &amp; Investment Immigration</h2>
             <hr className="divider left" />
             <p>Hartford&apos;s insurance, healthcare, and education sectors draw entrepreneurs and professionals from around the world. Attorney Goncalves also assists with business and investment immigration matters, including LLC applications and financial documentation.</p>
-            <Link className="btn btn-olive" href="/consultation">Discuss a Business Matter</Link>
+            <a className="btn btn-olive" href={BOOK_URL}>Discuss a Business Matter</a>
           </div>
           <div>
             <h3>Immigration Topics We Handle for Hartford Clients</h3>

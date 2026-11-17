@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Fragment, type ReactNode } from "react";
-import { HOURS, PHONE, PHONE_TEL, QA, TESTIMONIALS } from "@/lib/site";
+import { BOOK_URL, HOURS, PHONE, PHONE_TEL, QA, TESTIMONIALS } from "@/lib/site";
 
 const ICONS: Record<string, ReactNode> = {
   family: <><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" /></>,
@@ -200,7 +200,7 @@ export function CtaBand({
         <h2>{title}</h2>
         <p>{text}</p>
         <div className="actions">
-          <Link className="btn btn-gold" href="/consultation">Book Consultation</Link>
+          <a className="btn btn-gold" href={BOOK_URL}>Book Consultation</a>
           <a className="btn btn-outline" href={`tel:${PHONE_TEL}`}>Call {PHONE}</a>
         </div>
       </div>

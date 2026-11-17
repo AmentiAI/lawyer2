@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BOOK_URL } from "@/lib/site";
 
 export default function NotFound() {
   return (
@@ -10,7 +11,7 @@ export default function NotFound() {
         <p style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
           <Link className="btn btn-olive" href="/">Home</Link>
           <Link className="btn btn-outline-dark" href="/services">Services</Link>
-          <Link className="btn btn-gold" href="/consultation">Book a Consultation</Link>
+          <a className="btn btn-gold" href={BOOK_URL}>Book a Consultation</a>
         </p>
       </div>
     </section>

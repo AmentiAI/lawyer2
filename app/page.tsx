@@ -5,7 +5,7 @@ import ServiceCards from "@/components/ServiceCards";
 import { CtaBand, Faq, Icon, JsonLd, SectionHead, Skyline, Testimonials, UscisCard } from "@/components/ui";
 import { pageMeta } from "@/lib/meta";
 import { faqSchema } from "@/lib/schema";
-import { ATTORNEY, NEIGHBORHOODS, PHONE, PHONE_TEL, QA, TOWNS } from "@/lib/site";
+import { ATTORNEY, BOOK_URL, NEIGHBORHOODS, PHONE, PHONE_TEL, QA, TOWNS } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
   title: "Immigration Lawyer Hartford, CT | Jacquelyn R. Goncalves",
@@ -47,7 +47,7 @@ export default function Home() {
             <h1>Hartford Immigration Lawyer Guiding Families With <em>Personal Care</em> and Attention</h1>
             <p className="lede">From Asylum Hill to the South End, and from West Hartford to Manchester, Greater Hartford families work directly with {ATTORNEY} on green cards, family petitions, and citizenship, mostly by secure video, so you never have to make the drive.</p>
             <div className="hero-actions">
-              <Link className="btn btn-gold" href="/consultation">Book a Hartford Consultation</Link>
+              <a className="btn btn-gold" href={BOOK_URL}>Book a Hartford Consultation</a>
               <a className="btn btn-outline" href={`tel:${PHONE_TEL}`}>Call {PHONE}</a>
             </div>
             <ul className="hero-badges">
